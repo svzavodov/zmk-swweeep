@@ -11,10 +11,6 @@
 #define MOUSE   5
 #define WINNAV  6
 
-#define LHKEYS 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
-#define RHKEYS 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
-#define THUMBKEYS 30 31 32 33
-
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
@@ -38,6 +34,9 @@
             bindings = <&kp SEMI>;
         };
     };
+};
+
+/ {
 
     behaviors {
         hm: homerow_mods {
@@ -58,14 +57,13 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-    }; 
-
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "Default";
+            label = "\xEF\x81\x93 \xEF\x81\xB8 \xEF\x81\xB7 \xEF\x81\x94";
 
             bindings = <
     &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &lt WINNAV U  &kp Y       &kp SEMI
@@ -76,7 +74,7 @@
         };
 
         nav_layer {
-            label = "Navigation";
+            label = "<- /\ \/ ->";
 
             bindings = <
     &kp ESC      &kp PG_UP    &kp UP      &kp PG_DN     &trans                                      &kp ASTRK     &kp N7       &kp N8        &kp N9      &kp MINUS
