@@ -19,7 +19,7 @@
     continue-list = <UNDERSCORE MINUS>;
 };
 
-{
+/ {
     combos {
         compatible = "zmk,combos";
         combo_undo {
@@ -40,7 +40,7 @@
     };
 };
 
-{
+/ {
 
     behaviors {
         hm: homerow_mods {
