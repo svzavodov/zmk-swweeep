@@ -38,9 +38,6 @@
             bindings = <&kp SEMI>;
         };
     };
-};
-
-/ {
 
     behaviors {
         hm: homerow_mods {
@@ -62,7 +59,7 @@
             bindings = <&kp>, <&kp>;
         };
     }; 
-};
+
 
     keymap {
         compatible = "zmk,keymap";
